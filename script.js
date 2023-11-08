@@ -99,7 +99,7 @@ function removeToDoItem(todoId) {
 // that matches the id passed to the function, set its completed property to true
 // the function does not need to return anything
 function markToDoItemAsCompleted(todoId) {
-  // Implement the logic to mark a task as completed here
+  // Implement the logic to mark a task as completed heree
 
 let comp = false;
 
