@@ -142,7 +142,7 @@ function deleteToDoItem(todoId) {
   
 }
 
-// Function to clear all completed tasks
+// Function to clear all completed tasksa
 // Loop through the array of todos, and when you find a todo item that is marked
 // as completed, remove it completely from the array
 function clearCompletedTasks() {
