@@ -56,14 +56,21 @@ let completedItems = [];
 // the function does not need to return anything
 function addToDoItem(text) {
   // Implement the logic to add a task here
+  let identifier = 1;
+    if (todoItems.length > 0) {
+    identifier = todoItems[todoItems.length - 1].id + 1;
+    }
+
+  
   let task = {
-    id: todoItems.length,
+   
+    id: identifier,
     text: String(text),
     completed: false,
-  }
+  
+   };
+
   todoItems.push(task);
-    
-  // Remove this line when you start working on the function
 }
 
 
@@ -166,6 +173,9 @@ console.log('completed tasks have successfully been removed');
 //  markToDoItemAsCompleted(0); // This should mark the todo item with ID 0 as completed
 
 
+addToDoItem("fuck you")
+addToDoItem("piece of shit")
+console.log (todoItems);
 
 
 
